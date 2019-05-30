@@ -17,4 +17,9 @@ public class Set_Background : MonoBehaviour
         random = Random.Range(0, sprite.Length);
         image.sprite = sprite[random];
     }
+
+    public void Bye()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class PlayGame : MonoBehaviour
 {
-    public GameObject title;
+    public GameObject[] menu;
+
+    public GameObject texto;
 
     public Animator anim;
 
@@ -16,6 +18,10 @@ public class PlayGame : MonoBehaviour
 
     public void Finish()
     {
-        Destroy(title.gameObject);
+        texto.SetActive(true);
+        for (int i = 0; i < menu.Length; i++)
+        {
+            Destroy(menu[i].gameObject);
+        }
     }
 }

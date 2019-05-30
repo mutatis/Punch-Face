@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ActiveTheGame
+    - DigitandoTexto
     - PlayGame
     - Set_Background
     - ShareSocialMedia
@@ -48,27 +50,31 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9320}
-    - Class: 114
-      Script: {instanceID: 9322}
+      Script: {instanceID: 9326}
     - Class: 114
       Script: {instanceID: 9328}
     - Class: 114
-      Script: {instanceID: 9330}
-    - Class: 114
       Script: {instanceID: 9334}
     - Class: 114
-      Script: {instanceID: 9342}
+      Script: {instanceID: 9336}
     - Class: 114
-      Script: {instanceID: 9378}
+      Script: {instanceID: 9340}
     - Class: 114
-      Script: {instanceID: 9380}
+      Script: {instanceID: 9348}
     - Class: 114
-      Script: {instanceID: 10666}
+      Script: {instanceID: 9384}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 9386}
     - Class: 114
-      Script: {instanceID: 10672}
+      Script: {instanceID: 9724}
+    - Class: 114
+      Script: {instanceID: 9738}
+    - Class: 114
+      Script: {instanceID: 10322}
+    - Class: 114
+      Script: {instanceID: 13524}
+    - Class: 114
+      Script: {instanceID: 19100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -548,10 +554,22 @@ ScriptsOnlyBuild:
     className: AnalyticsTracker
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShareSocialMedia
+  - hash:
+      serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 13b9a031a7617a66ab734df616e65f84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayGame
   - hash:
       serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
@@ -602,7 +620,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 4a0369cd366c126cd420018a4ac01f32
+      Hash: 35a9693c388776aaf487636491a20f11
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
@@ -680,6 +698,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 4c9d869167b36172c1aa8217dfe08be9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Set_Background
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -722,23 +746,23 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
+      Hash: 074918ca9e65f830cec433d9cfd680d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DigitandoTexto
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ShareSocialMedia
+    className: ActiveTheGame
   - hash:
       serializedVersion: 2
-      Hash: 6d60876fe69e5c42e072f7c8f81e5ccf
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayGame
-  - hash:
-      serializedVersion: 2
-      Hash: 4c9d869167b36172c1aa8217dfe08be9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Set_Background
+    className: StartTheGame
   platform: 13
   scenePathNames:
   - Assets/Scene/Unique.unity
-  playerPath: C:/Users/User/Documents/GitHub/Punch/Biulds/0.2.apk
+  playerPath: C:/Users/User/Documents/GitHub/Punch-Face/Biulds/0.3.apk
