@@ -62,12 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\InGame\PunchController.cs" />
+    <Compile Include="Assets\Script\InGame\Score.cs" />
+    <Compile Include="Assets\Script\InGame\SpamPunch.cs" />
     <Compile Include="Assets\Script\Interface\ActiveTheGame.cs" />
     <Compile Include="Assets\Script\Interface\DigitandoTexto.cs" />
     <Compile Include="Assets\Script\Interface\PlayGame.cs" />
     <Compile Include="Assets\Script\Interface\Set_Background.cs" />
     <Compile Include="Assets\Script\Interface\ShareSocialMedia.cs" />
-    <Compile Include="Assets\Script\Interface\StartTheGame.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/User/Documents/GitHub/Punch-Face/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
