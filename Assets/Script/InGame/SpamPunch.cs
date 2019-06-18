@@ -9,9 +9,11 @@ public class SpamPunch : MonoBehaviour
 
     public float time, changeTime, limitTime;
 
-    public GameObject[] posX, posY;
+    GameObject[] posX, posY;
 
     float tempPosX, tempPosY;
+
+    int tempSpam;
 
     GameObject temp;
 
@@ -19,14 +21,11 @@ public class SpamPunch : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetInt("CurrentScore", 0);
+        posX = Camera.main.GetComponent<LimitsSpam>().posX;
+        posY = Camera.main.GetComponent<LimitsSpam>().posY;
         lastRoutine = StartCoroutine(Spam());
         changeRoutine = StartCoroutine(ChangeTime());
-    }
-
-    void Update()
-    {
-
+        Debug.Log("CUUUU");
     }
 
     IEnumerator Spam()
@@ -42,9 +41,14 @@ public class SpamPunch : MonoBehaviour
     IEnumerator ChangeTime()
     {
         yield return new WaitForSeconds(changeTime);
-        if (changeTime >= limitTime)
+        if (time >= limitTime && tempSpam == 0)
         { 
             time -= 0.1f;
+        }
+        else if(time < limitTime && tempSpam == 0)
+        {
+            Camera.main.GetComponent<LimitsSpam>().Spam();
+            tempSpam = 1;
         }
         changeRoutine = StartCoroutine(ChangeTime());
     }

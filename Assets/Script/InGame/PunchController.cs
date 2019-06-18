@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class PunchController : MonoBehaviour
 {
+    public GameObject point;
+
     public Animator anim;
+
+    public void Points()
+    {
+        point.SetActive(true);
+    }
 
     public void Finally()
     {

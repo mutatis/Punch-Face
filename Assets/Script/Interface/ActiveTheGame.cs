@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class ActiveTheGame : MonoBehaviour
 {
-    public GameObject[] startGame;
+    public GameObject[] startGameEnable, startGameInstantiate;
 
     public void LetsGo()
     {
-        for(int i = 0; i < startGame.Length; i++)
+        for(int i = 0; i < startGameEnable.Length; i++)
         {
-            startGame[i].SetActive(true);
+            startGameEnable[i].SetActive(true);
+        }
+        for (int i = 0; i < startGameInstantiate.Length; i++)
+        {
+            Instantiate(startGameInstantiate[i]);
         }
         Destroy(gameObject);
     }
