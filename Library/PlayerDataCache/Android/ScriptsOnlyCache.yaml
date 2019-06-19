@@ -2,7 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ActiveTheGame
+    - Background
     - DigitandoTexto
+    - LimitsSpam
     - PlayGame
     - PunchController
     - Score
@@ -73,19 +75,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9730}
     - Class: 114
-      Script: {instanceID: 9744}
+      Script: {instanceID: 9742}
     - Class: 114
-      Script: {instanceID: 9920}
+      Script: {instanceID: 9746}
     - Class: 114
-      Script: {instanceID: 10188}
+      Script: {instanceID: 9922}
     - Class: 114
-      Script: {instanceID: 10332}
+      Script: {instanceID: 10000}
     - Class: 114
-      Script: {instanceID: 12476}
+      Script: {instanceID: 10094}
     - Class: 114
-      Script: {instanceID: 13822}
+      Script: {instanceID: 10104}
     - Class: 114
-      Script: {instanceID: 16690}
+      Script: {instanceID: 10198}
+    - Class: 114
+      Script: {instanceID: 10342}
+    - Class: 114
+      Script: {instanceID: 16794}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -579,6 +585,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 996851b38792627a7ae9f3f65c16a8b5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpamPunch
+  - hash:
+      serializedVersion: 2
       Hash: 13b9a031a7617a66ab734df616e65f84
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -621,7 +633,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 9f87f014e602f78a3d0ad674466924d1
+      Hash: 4b059f0222968ce6bc12dc91aa99a931
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ActiveTheGame
@@ -631,6 +643,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: a00393ce6e2980e40c191dafb8e850c4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PunchController
   - hash:
       serializedVersion: 2
       Hash: 3f8d7b92a6be3c715e55d5cfa7cc8384
@@ -651,10 +669,22 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Score
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: a63a86976b88e31eae112bedc859c2e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LimitsSpam
   - hash:
       serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
@@ -771,23 +801,11 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: f7f1c063f614c6aaec4b4b7b21d7d6b2
+      Hash: a7808d82dcfb6cd94f5602da97f38960
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SpamPunch
-  - hash:
-      serializedVersion: 2
-      Hash: 659d6ceab26f9e4237abaaf29249f293
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PunchController
-  - hash:
-      serializedVersion: 2
-      Hash: 4ce15e99c635d2567873d27549d1f16f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Score
+    className: Background
   platform: 13
   scenePathNames:
   - Assets/Scene/Unique.unity
-  playerPath: C:/Users/User/Documents/GitHub/Punch-Face/Biulds/0.4.apk
+  playerPath: C:/Users/User/Documents/GitHub/Punch-Face/Biulds/0.5.apk

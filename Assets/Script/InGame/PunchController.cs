@@ -21,7 +21,7 @@ public class PunchController : MonoBehaviour
     private void OnMouseDown()
     {
         anim.SetTrigger("Dead");
-        int temp = PlayerPrefs.GetInt("CurrentScore", 0) + 1;
+        int temp = PlayerPrefs.GetInt("CurrentScore", 0) + 10;
         PlayerPrefs.SetInt("CurrentScore", temp);
     }
 }
