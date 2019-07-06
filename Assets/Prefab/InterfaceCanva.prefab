@@ -229,7 +229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click to protect me...
+  m_Text: Clique para me proteger...
 --- !u!1 &4181932819418813913
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308.6, y: 212.2}
+  m_AnchoredPosition: {x: 310, y: 212.2}
   m_SizeDelta: {x: 173.2, y: 18.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4181932819418813918
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4181932820793905927}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cda6f7cce68bf14d823c49f1c3b55e2, type: 3}
   m_Name: 
@@ -1380,7 +1380,7 @@ GameObject:
   - component: {fileID: 2318689727777345792}
   - component: {fileID: 9162277533639491051}
   - component: {fileID: 3701734188856322267}
-  - component: {fileID: 1966815711661166111}
+  - component: {fileID: 6515774255924066473}
   m_Layer: 5
   m_Name: Background Skye(1)
   m_TagString: Untagged
@@ -1444,7 +1444,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1966815711661166111
+--- !u!114 &6515774255924066473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1453,13 +1453,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6515774255924066472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cda6f7cce68bf14d823c49f1c3b55e2, type: 3}
+  m_Script: {fileID: 11500000, guid: bfae2538f4891e84cbb28f1b92a1b9db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite:
-  - {fileID: 21300000, guid: 3881399d3b658624096c0c732763a035, type: 3}
-  - {fileID: 21300000, guid: 879bbdf5ae961ee4296a4e98ba8a83bb, type: 3}
-  image: {fileID: 3701734188856322267}
+  limitLeft: {fileID: 432405369481962184}
+  limitRight: {fileID: 8569915478950702926}
+  velX: -0.01
 --- !u!1 &8468567351118921741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1470,7 @@ GameObject:
   - component: {fileID: 7715896930357332757}
   - component: {fileID: 8038938960908882931}
   - component: {fileID: 6459061046025218190}
-  - component: {fileID: 5870899624618699725}
+  - component: {fileID: 8468567351118921742}
   m_Layer: 5
   m_Name: Background Skye(3)
   m_TagString: Untagged
@@ -1535,7 +1534,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &5870899624618699725
+--- !u!114 &8468567351118921742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1544,13 +1543,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8468567351118921741}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cda6f7cce68bf14d823c49f1c3b55e2, type: 3}
+  m_Script: {fileID: 11500000, guid: bfae2538f4891e84cbb28f1b92a1b9db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite:
-  - {fileID: 21300000, guid: 3881399d3b658624096c0c732763a035, type: 3}
-  - {fileID: 21300000, guid: 879bbdf5ae961ee4296a4e98ba8a83bb, type: 3}
-  image: {fileID: 6459061046025218190}
+  limitLeft: {fileID: 432405369481962184}
+  limitRight: {fileID: 8569915478950702926}
+  velX: -0.01
 --- !u!1 &8569915478950702926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,7 +1632,7 @@ GameObject:
   - component: {fileID: 7756448753963898720}
   - component: {fileID: 5146767566780841157}
   - component: {fileID: 512618745884448412}
-  - component: {fileID: 3279975851484864201}
+  - component: {fileID: 9091776911666351290}
   m_Layer: 5
   m_Name: Background Skye(2)
   m_TagString: Untagged
@@ -1698,7 +1696,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &3279975851484864201
+--- !u!114 &9091776911666351290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1707,10 +1705,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 9091776911666351289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cda6f7cce68bf14d823c49f1c3b55e2, type: 3}
+  m_Script: {fileID: 11500000, guid: bfae2538f4891e84cbb28f1b92a1b9db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite:
-  - {fileID: 21300000, guid: 3881399d3b658624096c0c732763a035, type: 3}
-  - {fileID: 21300000, guid: 879bbdf5ae961ee4296a4e98ba8a83bb, type: 3}
-  image: {fileID: 512618745884448412}
+  limitLeft: {fileID: 432405369481962184}
+  limitRight: {fileID: 8569915478950702926}
+  velX: -0.01

@@ -25,7 +25,15 @@ public class SpamPunch : MonoBehaviour
         posY = Camera.main.GetComponent<LimitsSpam>().posY;
         lastRoutine = StartCoroutine(Spam());
         changeRoutine = StartCoroutine(ChangeTime());
-        Debug.Log("CUUUU");
+    }
+
+    private void Update()
+    {
+        if(Camera.main.GetComponent<Manager>().vida < 0)
+        {
+            StopCoroutine(lastRoutine);
+            StopCoroutine(changeRoutine);
+        }
     }
 
     IEnumerator Spam()

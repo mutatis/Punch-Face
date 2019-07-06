@@ -10,6 +10,6 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        text.text = PlayerPrefs.GetInt("CurrentScore", 0) + " Cute Score";
+        text.text = Camera.main.GetComponent<Manager>().pontuacao + " Cute Score";
     }
 }

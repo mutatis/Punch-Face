@@ -4,7 +4,9 @@ ScriptsOnlyBuild:
     - ActiveTheGame
     - Background
     - DigitandoTexto
+    - Life
     - LimitsSpam
+    - Manager
     - PlayGame
     - PunchController
     - Score
@@ -31,6 +33,45 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scene/GameOver.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9336}
+    - Class: 114
+      Script: {instanceID: 9342}
+    - Class: 114
+      Script: {instanceID: 9348}
+    - Class: 114
+      Script: {instanceID: 9392}
+    - Class: 114
+      Script: {instanceID: 9394}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scene/Unique.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -57,41 +98,45 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9332}
-    - Class: 114
       Script: {instanceID: 9334}
     - Class: 114
-      Script: {instanceID: 9340}
+      Script: {instanceID: 9336}
     - Class: 114
       Script: {instanceID: 9342}
     - Class: 114
-      Script: {instanceID: 9346}
+      Script: {instanceID: 9344}
     - Class: 114
-      Script: {instanceID: 9354}
+      Script: {instanceID: 9348}
     - Class: 114
-      Script: {instanceID: 9390}
+      Script: {instanceID: 9356}
     - Class: 114
       Script: {instanceID: 9392}
     - Class: 114
-      Script: {instanceID: 9730}
+      Script: {instanceID: 9394}
     - Class: 114
-      Script: {instanceID: 9742}
+      Script: {instanceID: 9732}
     - Class: 114
-      Script: {instanceID: 9746}
+      Script: {instanceID: 9744}
     - Class: 114
-      Script: {instanceID: 9922}
+      Script: {instanceID: 9748}
     - Class: 114
-      Script: {instanceID: 10000}
+      Script: {instanceID: 9924}
     - Class: 114
-      Script: {instanceID: 10094}
+      Script: {instanceID: 9932}
     - Class: 114
-      Script: {instanceID: 10104}
+      Script: {instanceID: 10004}
     - Class: 114
-      Script: {instanceID: 10198}
+      Script: {instanceID: 10098}
     - Class: 114
-      Script: {instanceID: 10342}
+      Script: {instanceID: 10108}
     - Class: 114
-      Script: {instanceID: 16794}
+      Script: {instanceID: 10202}
+    - Class: 114
+      Script: {instanceID: 10346}
+    - Class: 114
+      Script: {instanceID: 12112}
+    - Class: 114
+      Script: {instanceID: 14676}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -639,6 +684,12 @@ ScriptsOnlyBuild:
     className: ActiveTheGame
   - hash:
       serializedVersion: 2
+      Hash: a7808d82dcfb6cd94f5602da97f38960
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Background
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -801,11 +852,18 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: a7808d82dcfb6cd94f5602da97f38960
+      Hash: 5a2bccb29f8dbebcc2cec1db8a9c3d55
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Background
+    className: Manager
+  - hash:
+      serializedVersion: 2
+      Hash: 963e0e746aeef15e37b7b6455710a5e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Life
   platform: 13
   scenePathNames:
   - Assets/Scene/Unique.unity
-  playerPath: C:/Users/User/Documents/GitHub/Punch-Face/Biulds/0.5.apk
+  - Assets/Scene/GameOver.unity
+  playerPath: C:/Users/User/Documents/GitHub/Punch-Face/Biulds/0.6.apk

@@ -18,10 +18,14 @@ public class PunchController : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void Dano()
+    {
+        Camera.main.GetComponent<Manager>().Dano();
+    }
+
     private void OnMouseDown()
     {
         anim.SetTrigger("Dead");
-        int temp = PlayerPrefs.GetInt("CurrentScore", 0) + 10;
-        PlayerPrefs.SetInt("CurrentScore", temp);
+        Camera.main.GetComponent<Manager>().Defesa();
     }
 }
