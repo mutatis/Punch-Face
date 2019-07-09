@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - ActiveTheGame
     - Background
     - DigitandoTexto
+    - HighScoreText
     - Life
     - LimitsSpam
     - Manager
@@ -13,16 +14,13 @@ ScriptsOnlyBuild:
     - Set_Background
     - ShareSocialMedia
     - SpamPunch
+    - Teste
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
-    UnityEditor.TestRunner.dll:
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -51,20 +49,28 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9336}
+      Script: {instanceID: 9378}
     - Class: 114
-      Script: {instanceID: 9342}
+      Script: {instanceID: 9380}
     - Class: 114
-      Script: {instanceID: 9348}
+      Script: {instanceID: 9386}
     - Class: 114
       Script: {instanceID: 9392}
     - Class: 114
-      Script: {instanceID: 9394}
+      Script: {instanceID: 9400}
+    - Class: 114
+      Script: {instanceID: 9436}
+    - Class: 114
+      Script: {instanceID: 9438}
+    - Class: 114
+      Script: {instanceID: 10062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -98,45 +104,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9334}
+      Script: {instanceID: 9378}
     - Class: 114
-      Script: {instanceID: 9336}
+      Script: {instanceID: 9380}
     - Class: 114
-      Script: {instanceID: 9342}
+      Script: {instanceID: 9386}
     - Class: 114
-      Script: {instanceID: 9344}
-    - Class: 114
-      Script: {instanceID: 9348}
-    - Class: 114
-      Script: {instanceID: 9356}
+      Script: {instanceID: 9388}
     - Class: 114
       Script: {instanceID: 9392}
     - Class: 114
-      Script: {instanceID: 9394}
+      Script: {instanceID: 9400}
     - Class: 114
-      Script: {instanceID: 9732}
+      Script: {instanceID: 9436}
     - Class: 114
-      Script: {instanceID: 9744}
+      Script: {instanceID: 9438}
     - Class: 114
-      Script: {instanceID: 9748}
+      Script: {instanceID: 9680}
     - Class: 114
-      Script: {instanceID: 9924}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 9932}
+      Script: {instanceID: 9746}
     - Class: 114
-      Script: {instanceID: 10004}
+      Script: {instanceID: 9750}
     - Class: 114
-      Script: {instanceID: 10098}
+      Script: {instanceID: 9786}
     - Class: 114
-      Script: {instanceID: 10108}
+      Script: {instanceID: 9904}
     - Class: 114
-      Script: {instanceID: 10202}
+      Script: {instanceID: 9912}
     - Class: 114
-      Script: {instanceID: 10346}
+      Script: {instanceID: 9972}
     - Class: 114
-      Script: {instanceID: 12112}
+      Script: {instanceID: 10058}
     - Class: 114
-      Script: {instanceID: 14676}
+      Script: {instanceID: 10068}
+    - Class: 114
+      Script: {instanceID: 10144}
+    - Class: 114
+      Script: {instanceID: 10272}
+    - Class: 114
+      Script: {instanceID: 10284}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -606,6 +614,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 963e0e746aeef15e37b7b6455710a5e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Life
+  - hash:
+      serializedVersion: 2
       Hash: 303ad70ce203ad874efe2965d0fbcff9
     assemblyName: Unity.Analytics.Tracker.dll
     namespaceName: UnityEngine.Analytics
@@ -654,6 +668,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HighScoreText
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -696,7 +716,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: a00393ce6e2980e40c191dafb8e850c4
+      Hash: 010ea218ecf970c51fd99d64312664c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PunchController
@@ -730,6 +750,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Teste
   - hash:
       serializedVersion: 2
       Hash: a63a86976b88e31eae112bedc859c2e3
@@ -810,6 +836,12 @@ ScriptsOnlyBuild:
     className: Set_Background
   - hash:
       serializedVersion: 2
+      Hash: bf94afbb88c03078a42e3dc18fb76a25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Manager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -850,20 +882,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 5a2bccb29f8dbebcc2cec1db8a9c3d55
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Manager
-  - hash:
-      serializedVersion: 2
-      Hash: 963e0e746aeef15e37b7b6455710a5e3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Life
   platform: 13
   scenePathNames:
   - Assets/Scene/Unique.unity
   - Assets/Scene/GameOver.unity
-  playerPath: C:/Users/User/Documents/GitHub/Punch-Face/Biulds/0.6.apk
+  playerPath: C:/Users/User/Documents/GitHub/Punch-Face/Biulds/0.8.apk
