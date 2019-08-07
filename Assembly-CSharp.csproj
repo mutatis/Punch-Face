@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\GameOver\GameOverManager.cs" />
+    <Compile Include="Assets\Script\GameOver\SharePontuacao.cs" />
     <Compile Include="Assets\Script\InGame\Background.cs" />
+    <Compile Include="Assets\Script\InGame\ControllClick.cs" />
     <Compile Include="Assets\Script\InGame\LimitsSpam.cs" />
     <Compile Include="Assets\Script\InGame\PunchController.cs" />
     <Compile Include="Assets\Script\InGame\Score.cs" />

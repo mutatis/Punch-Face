@@ -43,14 +43,17 @@ public class PunchController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        anim.SetTrigger("Dead");
-        if (tipo == 0)
+        if (Camera.main.GetComponent<Manager>().acerto)
         {
-            Camera.main.GetComponent<Manager>().Defesa(pontos, gameObject);
-        }
-        else if(tipo == 1)
-        {
-            Camera.main.GetComponent<Manager>().Defesa((pontos * 2), gameObject);
+            anim.SetTrigger("Dead");
+            if (tipo == 0)
+            {
+                Camera.main.GetComponent<Manager>().Defesa(pontos, gameObject);
+            }
+            else if (tipo == 1)
+            {
+                Camera.main.GetComponent<Manager>().Defesa((pontos * 2), gameObject);
+            }
         }
     }
 }

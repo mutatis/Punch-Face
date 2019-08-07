@@ -5,18 +5,12 @@ using UnityEngine.Advertisements;
 
 public class GameOverManager : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        if(Advertisement.IsReady())
+        if(Advertisement.IsReady() && PlayerPrefs.GetInt("MorteAD") >= 3)
         {
             Advertisement.Show();
+            PlayerPrefs.SetInt("MorteAD", 0);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

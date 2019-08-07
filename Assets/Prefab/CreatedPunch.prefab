@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   punch: {fileID: 3152261758310759781, guid: 430681fc3a5467a499be31cbfaf92351, type: 3}
-  time: 1.7
-  changeTime: 8
+  time: 1.5
+  changeTime: 6.5
   limitTime: 1

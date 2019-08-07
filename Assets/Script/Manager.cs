@@ -12,9 +12,16 @@ public class Manager : MonoBehaviour
 
     public int pontuacao, vida;
 
+    public float tempoDeErro;
+
+    public bool acerto = true;
+
+    Coroutine acertouStopRoutine = null;
+
     private void Start()
     {
         pontuacao = 0;
+        PlayerPrefs.SetInt("Pontuacao", pontuacao);
         vida = 3;
     }
 
@@ -26,12 +33,18 @@ public class Manager : MonoBehaviour
             {
                 PlayerPrefs.SetInt("HighScore", pontuacao);
             }
+            PlayerPrefs.SetInt("MorteAD", PlayerPrefs.GetInt("MorteAD") + 1);
             SceneManager.LoadScene("GameOver");
         }
     }
 
     public void Defesa(int pontos, GameObject punch)
     {
+        if (acertouStopRoutine != null)
+        {
+            StopCoroutine(acertouStopRoutine);
+        }
+        acerto = true;
         GameObject obj = Instantiate(pontuou, transform.position, transform.rotation);
         obj.transform.SetParent(intfInGame.transform);
         obj.transform.position = punch.transform.position;
@@ -39,6 +52,7 @@ public class Manager : MonoBehaviour
         obj.GetComponent<Text>().text = "+" + pontos;
         punch.GetComponent<PunchController>().pontuou = obj;
         pontuacao += pontos;
+        PlayerPrefs.SetInt("Pontuacao", pontuacao);
     }
 
     public void Dano()
@@ -48,5 +62,17 @@ public class Manager : MonoBehaviour
             vida -= 1;
             piscaDano.SetTrigger("Dano");
         }
+    }
+
+    public void Erro()
+    {
+        acerto = false;
+        acertouStopRoutine = StartCoroutine(EsperaErrado());
+    }
+
+    IEnumerator EsperaErrado()
+    {
+        yield return new WaitForSeconds(tempoDeErro);
+        acerto = true;        
     }
 }
